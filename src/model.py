@@ -68,3 +68,12 @@ class MLPRegressor(nn.Module):
     def forward(self, x):
         x = self.fc_layers(x)
         return x
+
+class SimpleLinearRegressor(nn.Module):
+    """ 간단한 선형 회귀 모델 """
+    def __init__(self):
+        super(SimpleLinearRegressor, self).__init__()
+        self.linear = nn.Linear(1, 1)  # Height -> Weight (1D to 1D)
+
+    def forward(self, x):
+        return self.linear(x)

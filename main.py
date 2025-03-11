@@ -5,7 +5,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Train a model (CNN or MLP) for weight prediction.")
 
     # Model selection
-    parser.add_argument("--model", type=str, choices=["cnn", "mlp"], required=True, help="Choose between 'cnn' or 'mlp' model.")
+    parser.add_argument("--model", type=str, choices=["cnn", "mlp", "linear"], required=True, help="Choose among 'cnn', 'mlp' or 'linear' model.")
 
     # Training parameters
     parser.add_argument("--epochs", type=int, default=100, help="Number of epochs for training")
