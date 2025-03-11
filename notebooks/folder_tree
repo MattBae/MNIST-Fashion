@@ -1,0 +1,44 @@
+├── .DS_Store
+├── .venv/
+│   ├── .gitignore
+│   ├── bin/
+│   │   ├── Activate.ps1
+│   │   ├── activate
+│   │   ├── activate.csh
+│   │   ├── activate.fish
+│   │   ├── f2py
+│   │   ├── normalizer
+│   │   ├── numpy-config
+│   │   ├── pip
+│   │   ├── pip3
+│   │   ├── pip3.9
+│   │   ├── python
+│   │   ├── python3
+│   │   ├── python3.9
+│   │   └── tqdm
+│   ├── include/
+│   ├── lib/
+│   │   └── python3.9/
+│   └── pyvenv.cfg
+├── .vscode/
+│   └── launch.json
+└── Weight-Prediction-CNN/
+    ├── .DS_Store
+    ├── README.md
+    ├── data/
+    │   └── SOCR-HeightWeight.csv
+    ├── logs/
+    │   └── run2/
+    ├── models/
+    │   └── cnn_regressor.pth
+    ├── notebooks/
+    │   ├── Regression.ipynb
+    │   └── folder_tree
+    ├── requirements.txt
+    ├── src/
+    │   ├── dataset.py
+    │   ├── evaluate.py
+    │   ├── model.py
+    │   ├── train.py
+    │   └── utils.py
+    └── train_parser.py
