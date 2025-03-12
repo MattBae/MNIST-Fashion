@@ -39,11 +39,11 @@ def main():
     # Load model
     model = get_model(args.model).to(device)
 
-    # Load dataset (FIXED: Removed `data_path`)
-    train_loader, test_loader = get_dataloader(args.batch_size)
+    # Load dataset (includes val_loader now)
+    train_loader, val_loader, test_loader = get_dataloader(args.batch_size)
 
     if args.mode == "train":
-        train_model(model, train_loader, device, args)
+        train_model(model, train_loader, val_loader, test_loader, device, args)
     elif args.mode == "eval":
         if args.load_model == "":
             print("❌ Please provide --load_model to evaluate a saved model.")

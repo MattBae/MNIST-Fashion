@@ -1,7 +1,7 @@
 torch==2.1.0            # PyTorch (Ensure compatibility with your CUDA version if using GPU)
 torchvision==0.16.0     # Contains pre-built ResNet and VGG models
 torchaudio==2.1.0       # Required by PyTorch (though not used in this project)
-numpy==1.24            # Numerical operations
+numpy==1.26.4          # Numerical operations #Compatiable with Colab
 matplotlib==3.7.1      # For visualizing data and results
 tqdm==4.66.1           # Progress bar tracking
 tensorboard==2.15.0    # Logs training/evaluation curves
