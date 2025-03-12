@@ -8,6 +8,9 @@ def evaluate_model(model, test_loader, device, args):
     criterion = torch.nn.CrossEntropyLoss()
     writer = SummaryWriter(log_dir=args.log_dir)
 
+    # Print dataset size before evaluation
+    print(f"🔵 Starting Evaluation: {len(test_loader.dataset)} test samples")
+
     total_loss = 0.0
     with torch.no_grad():
         for images, labels in test_loader:

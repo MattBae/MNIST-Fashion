@@ -11,6 +11,10 @@ def train_model(model, train_loader, device, args):
     writer = SummaryWriter(log_dir=args.log_dir)
 
     model.train()
+
+    # Print dataset size before training
+    print(f"🟢 Starting Training: {len(train_loader.dataset)} training samples, Batch size: {args.batch_size}")
+
     for epoch in range(args.epochs):
         running_loss = 0.0
         progress_bar = tqdm(train_loader, desc=f"Epoch {epoch+1}/{args.epochs}")
