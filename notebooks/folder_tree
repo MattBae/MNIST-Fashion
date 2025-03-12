@@ -1,44 +1,104 @@
 ├── .DS_Store
-├── .venv/
-│   ├── .gitignore
-│   ├── bin/
-│   │   ├── Activate.ps1
-│   │   ├── activate
-│   │   ├── activate.csh
-│   │   ├── activate.fish
-│   │   ├── f2py
-│   │   ├── normalizer
-│   │   ├── numpy-config
-│   │   ├── pip
-│   │   ├── pip3
-│   │   ├── pip3.9
-│   │   ├── python
-│   │   ├── python3
-│   │   ├── python3.9
-│   │   └── tqdm
-│   ├── include/
-│   ├── lib/
-│   │   └── python3.9/
-│   └── pyvenv.cfg
-├── .vscode/
-│   └── launch.json
-└── Weight-Prediction-CNN/
-    ├── .DS_Store
-    ├── README.md
-    ├── data/
-    │   └── SOCR-HeightWeight.csv
-    ├── logs/
-    │   └── run2/
-    ├── models/
-    │   └── cnn_regressor.pth
-    ├── notebooks/
-    │   ├── Regression.ipynb
-    │   └── folder_tree
-    ├── requirements.txt
-    ├── src/
-    │   ├── dataset.py
-    │   ├── evaluate.py
-    │   ├── model.py
-    │   ├── train.py
-    │   └── utils.py
-    └── train_parser.py
+├── .git/
+│   ├── COMMIT_EDITMSG
+│   ├── HEAD
+│   ├── config
+│   ├── description
+│   ├── hooks/
+│   │   ├── applypatch-msg.sample
+│   │   ├── commit-msg.sample
+│   │   ├── fsmonitor-watchman.sample
+│   │   ├── post-update.sample
+│   │   ├── pre-applypatch.sample
+│   │   ├── pre-commit.sample
+│   │   ├── pre-merge-commit.sample
+│   │   ├── pre-push.sample
+│   │   ├── pre-rebase.sample
+│   │   ├── pre-receive.sample
+│   │   ├── prepare-commit-msg.sample
+│   │   ├── push-to-checkout.sample
+│   │   └── update.sample
+│   ├── index
+│   ├── info/
+│   │   └── exclude
+│   ├── logs/
+│   │   ├── HEAD
+│   │   └── refs/
+│   ├── objects/
+│   │   ├── 00/
+│   │   ├── 01/
+│   │   ├── 05/
+│   │   ├── 06/
+│   │   ├── 18/
+│   │   ├── 2c/
+│   │   ├── 31/
+│   │   ├── 32/
+│   │   ├── 3e/
+│   │   ├── 46/
+│   │   ├── 49/
+│   │   ├── 4a/
+│   │   ├── 54/
+│   │   ├── 56/
+│   │   ├── 5c/
+│   │   ├── 65/
+│   │   ├── 75/
+│   │   ├── 7c/
+│   │   ├── 87/
+│   │   ├── 89/
+│   │   ├── 90/
+│   │   ├── a0/
+│   │   ├── a3/
+│   │   ├── a8/
+│   │   ├── a9/
+│   │   ├── ad/
+│   │   ├── b2/
+│   │   ├── b4/
+│   │   ├── b8/
+│   │   ├── c0/
+│   │   ├── c1/
+│   │   ├── c4/
+│   │   ├── d6/
+│   │   ├── da/
+│   │   ├── e0/
+│   │   ├── e3/
+│   │   ├── e6/
+│   │   ├── f5/
+│   │   ├── f7/
+│   │   ├── f9/
+│   │   ├── info/
+│   │   └── pack/
+│   └── refs/
+│       ├── heads/
+│       ├── remotes/
+│       └── tags/
+├── README.md
+├── data/
+│   ├── t10k-images-idx3-ubyte
+│   ├── t10k-images-idx3-ubyte.gz
+│   ├── t10k-labels-idx1-ubyte
+│   ├── t10k-labels-idx1-ubyte.gz
+│   ├── train-images-idx3-ubyte
+│   ├── train-images-idx3-ubyte.gz
+│   ├── train-labels-idx1-ubyte
+│   └── train-labels-idx1-ubyte.gz
+├── logs/
+├── main.py
+├── models/
+├── notebooks/
+│   ├── data_loader.ipynb
+│   └── folder_tree
+├── requirements.txt
+├── results/
+└── src/
+    ├── __pycache__/
+    │   ├── dataset.cpython-312.pyc
+    │   ├── dataset.cpython-39.pyc
+    │   ├── model.cpython-312.pyc
+    │   ├── model.cpython-39.pyc
+    │   ├── train.cpython-312.pyc
+    │   └── train.cpython-39.pyc
+    ├── dataset.py
+    ├── evaluate.py
+    ├── model.py
+    ├── train.py
+    └── utils.py

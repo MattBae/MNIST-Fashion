@@ -1,0 +1,8 @@
+__pycache__/
+logs/
+models/
+notebooks/
+results/
+data/
+.DS_Store
+.venv/
